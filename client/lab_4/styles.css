@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .menu-container {
+    color: #fff;
+    background-color: #5995DA; 
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .menu {
+    border: 1px solid #fff; 
+    width: 900px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .header-container {
+    color: #5995DA;
+    background-color: #D6E9FE;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .header {
+    width: 900px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .social,
+  .logo,
+  .subscribe {
+  border: 1px solid #5995DA;
+  margin-bottom: 20px;
+ }
+ .photo-grid-container {
+    justify-content: center;
+  }
+  
+  .photo-grid {
+    width: 900px;
+    justify-content: center;
+    flex-wrap:wrap;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  
+  .photo-grid-item {
+    border: 1px solid #fff;
+    width: 300px;
+    height: 300px;
+    justify-content: center;
+  }
+  .carousel {
+    overflow: hidden;
+    max-width: 600px;
+    position: relative;
+    justify-content: center;
+  }
+  
+  .carousel .carousel__item,
+  .carousel .carousel__item--hidden {
+    display: none;
+  }
+  
+  .carousel .carousel__item img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    justify-content: center;
+  }
+  
+  .carousel .carousel__item--visible {
+    display: block;
+    justify-content: center;
+  }
+  
+  .carousel .carousel__actions {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    justify-content: space-between;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .carousel .carousel__actions button {
+    border-radius: 50px;
+    border: 0;
+    font-weight: bold;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .carousel .carousel__actions button#carousel__button--prev {
+    margin-left: 20px;
+    
+  }
+  
+  .carousel .carousel__actions button#carousel__button--next {
+    margin-right: 20px;
+    color: rgb(219, 166, 20)
+  }
+  
+  
+  .first-item {
+    order: 1;
+  }
+  
+  .last-item {
+    order: -1;
+  }
+  .footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-item {
+    border: 1px solid #fff;
+    background-color: #D6E9FE;
+    height: 200px;
+    flex: 1;
+ }
+ .footer-three {
+    flex: 2;
+  }
+  .footer-one,
+ .footer-three {
+  background-color: #5995DA;
+  flex: initial;
+  width: 300px;
+ }
+ .signup {
+     color: #ffffff;
+    margin-left: auto;
+  }
+  .links {
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .login {
+    margin-left: 20px;
+  }
