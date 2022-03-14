@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel = "stylesheet" href = "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href = "styles.css">
+    <title>lab6</title>
+</head>
+<body>
+    <br/>
+    <br/>
+    <div class = "wrapper">
+    <span class="tag is-warning is-large">Nicholas Urquhart Lab 6</span>
+
+    
+    <div class = "columns">
+    <form class= "box">
+        <div class="field">
+          <label class="label">First Name</label> 
+          <div class="control">
+            <input class="input" name = "name">
+          </div>
+        </div>
+      
+        <div class="field">
+          <label class="label">Food Preference</label>
+          <div class="control">
+            <input class="input" name = "food">
+          </div>
+        </div>
+        <div class="control">
+            <label class="radio"> Are you a vegetarian/vegan?
+                <br/>
+              <input type="radio" name="answer">
+              Yes
+            </label>
+            <label class="radio">
+              <input type="radio" name="answer">
+              No
+            </label>
+          </div>
+      <div class = 'submit_button'>
+        <button class="button is-primary is-large">Submit</button>
+    </div>
+      </form>
+    <div class="box">
+        <strong>Resturants List</strong>
+          <ul class = "rest-list"></ul>
+    </div>
+    </div>
+</div>
+<script src = "script.js"></script>
+</body>
+</html>
