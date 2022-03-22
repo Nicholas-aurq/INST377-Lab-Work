@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel = "stylesheet" href = "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href = "styles.css">
+    <title>lab7</title>
+</head>
+<body>
+    <br/>
+    <br/>
+    <div class = "wrapper">
+    <span class="tag is-warning is-large">Nicholas Urquhart Lab 7</span>
+
+    
+    <div class = "columns">
+    <form class= "box">
+        <div class="field">
+          <label class="label" for="rest_name">Resturant Name</label> 
+          <div class="control">
+            <input type="text" name = "rest_name" id="rest_name">
+          </div>
+        </div>
+      
+        <div class="field">
+          <label class="label" for="city">City</label>
+          <div class="control">
+            <input type = "text" name = "city" id = "city">
+          </div>
+        </div>
+      <div class = 'submit_button'>
+        <button class="button is-primary is-large">Refresh Resturant List</button>
+    </div>
+      </form>
+    <div class="box">
+        <strong>Resturants List</strong>
+          <ul class = "rest-list"></ul>
+    </div>
+    </div>
+</div>
+<script src = "script.js"></script>
+</body>
+</html>
