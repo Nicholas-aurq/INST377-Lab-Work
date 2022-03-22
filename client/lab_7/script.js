@@ -5,9 +5,9 @@ function getRandomInt(min, max) {
     Math.random() * (newMax - newMin + 1) + newMin
   );
 }
-  
-function dataHandler(arr) { 
-  console.log('fired dataHandler')
+
+function dataHandler(arr) {
+  console.log('fired dataHandler');
   const range = [...Array(15).keys()];
   const listItems = range.map((item, index) => {
     const ind = getRandomInt(0, arr.length - 1);
@@ -15,9 +15,9 @@ function dataHandler(arr) {
   });
   return listItems;
 }
-  
+
 function createHTMLlist(collection) {
-  console.log('fired HTML creator function')
+  console.log('fired HTML creator function');
   console.log(collection);
   const targetList = document.querySelector('.rest-list');
   targetList.innerHTML = '';
@@ -33,18 +33,16 @@ async function mainEvent() { // the async keyword means we can make API requests
   const form = document.querySelector('.box');
   const sub = document.querySelector('.submit_button');
 
-  const rest = document.querySelector('#rest_name')
-  const city = document.querySelector('#city')
+  const rest = document.querySelector('#rest_name');
+  const city = document.querySelector('#city');
   sub.style.display = 'none';
   const results = await fetch('/api/foodServicesPG'); // This accesses some data from our API
   const arrayFromJson = await results.json(); // This changes it into data we can use - an object
 
-
-
   if (arrayFromJson.data.length > 0) {
     sub.style.display = 'block';
     let currentArray = [];
-    if (currentArray === undefined) {return;}
+    if (currentArray === undefined) { return; }
     rest.addEventListener('input', async(event) => {
       console.log(event.target.value);
       if (currentArray.length < 1) {
@@ -63,7 +61,7 @@ async function mainEvent() { // the async keyword means we can make API requests
       if (currentArray.length < 1) {
         return;
       }
-  
+
       const cities = currentArray.filter((item) => {
         const lowerName = item.city.toLowerCase();
         const lowerValue = event.target.value.toLowerCase();
@@ -71,8 +69,6 @@ async function mainEvent() { // the async keyword means we can make API requests
       });
       createHTMLlist(cities);
     });
-
-
 
     form.addEventListener('submit', async (submitEvent) => { // async has to be declared all the way to get an await
       submitEvent.preventDefault(); // This prevents your page from refreshing!
@@ -83,6 +79,6 @@ async function mainEvent() { // the async keyword means we can make API requests
       createHTMLlist(currentArray);
     });
   }
-}  
+}
 // this actually runs first! It's calling the function above
 document.addEventListener('DOMContentLoaded', async () => mainEvent()); // the async keyword means we can make API requests
