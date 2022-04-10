@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel = "stylesheet" href = "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href = "styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+    
+    <title>Lab 8</title>
+</head>
+<body>
+    <br/>
+    <br/>
+<div class = "wrapper">
+    <span class="tag is-warning is-large">Nicholas Urquhart Lab 8</span>
+
+    
+    <div class = "columns">
+    <form class= "box">
+        <div class="field">
+          <label class="label" for="rest_name">Resturant Name</label> 
+          <div class="control">
+            <input type="text" name = "rest_name" id="rest_name">
+          </div>
+        </div>
+      
+        <div class="field">
+          <label class="label" for="city">City</label>
+          <div class="control">
+            <input type = "text" name = "city" id = "city">
+          </div>
+        </div>
+      <div class = 'submit_button'>
+        <button class="button is-primary is-large">Refresh Resturant List</button>
+    </div>
+      </form>
+    <div class="box">
+        <strong>Resturants List</strong>
+          <ul class = "rest-list"></ul>
+    </div>
+    <div id="map">
+
+    </div>
+    </div>
+
+
+</div>
+<script src = "script.js"></script>
+
+</body>
+</html>
