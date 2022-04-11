@@ -43,9 +43,11 @@
   .rest-list{
 
   }
+  .map_wrap{
+    display: inline-block;
+  }
   #map {
-    height:180px;
-    width: 360px;
-
+    height:500px;
+    width: 800px;
   }
   
